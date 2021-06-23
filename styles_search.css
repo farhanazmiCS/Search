@@ -30,17 +30,6 @@ img {
     font-size: 20px;
 }
 
-#field {
-    border-radius: 20px;
-    border-width: thin;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    outline: none;
-}
-
 .link {
     float: right;
 }
@@ -84,11 +73,97 @@ label {
     padding-left: 20px;
     padding-right: 30px;
 }
+/* large devices i.e. laptops and desktops */
+@media (min-width: 800px) {
 
-.advanced_search_field {
-    font-size: 18px;
-    padding: 5px;
-    outline: none;
+    #field {
+        border-radius: 20px;
+        border-width: thin;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        width: 600px;
+    }
+
+    .advanced_search_field {
+        font-size: 18px;
+        padding: 5px;
+        outline: none;
+        width: 600px;
+    }
+
+    #q {
+        padding-left: 70px;
+    }
+    
+    #as_oq {
+        padding-left: 40px;
+    }
+    
+    #as_eq {
+        padding-left: 35px;
+    }
+}
+
+/* mid-scale devices */
+@media (min-width: 415px) and (max-width: 799px) {
+    
+    #field {
+        border-radius: 20px;
+        border-width: thin;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        width: 380px;
+    }
+    
+    .advanced_search_field {
+        font-size: 18px;
+        padding: 5px;
+        outline: none;
+        width: 320px;
+    }
+
+    #q {
+        padding-left: 70px;
+    }
+    
+    #as_oq {
+        padding-left: 40px;
+    }
+    
+    #as_eq {
+        padding-left: 35px;
+    }
+}
+
+/* smartphone in portrait orientation */
+@media (min-width: 311px) and (max-width: 414px) {
+    
+    #field {
+        border-radius: 20px;
+        border-width: thin;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        width: 280px;
+    }
+    
+    .advanced_search_field {
+        font-size: 18px;
+        padding: 5px;
+        outline: none;
+        width: 290px;
+    }
 }
 
 #range {
@@ -98,4 +173,16 @@ label {
 
 label, #range {
     font-size: 14px;
+}
+
+#q {
+    padding-left: 70px;
+}
+
+#as_oq {
+    padding-left: 40px;
+}
+
+#as_eq {
+    padding-left: 35px;
 }

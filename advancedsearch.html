@@ -17,19 +17,24 @@
         <div class="form-advanced">
             <form action="https://google.com/search">
                 <label for="q">all these words:</label>
-                <input class="advanced_search_field" type="text" name="q" size="80">
+                <span id="q">
+                    <input class="advanced_search_field" type="text" name="q">
+                </span>
                 <br><br>
                 <label for="as_epq">this exact word or phrase:</label>
-                <input class="advanced_search_field" type="text" name="as_epq" size="80">
+                <span id="as_epq">
+                    <input class="advanced_search_field" type="text" name="as_epq">
+                </span>
                 <br><br>
                 <label for="as_oq">amy of these words:</label>
-                <input class="advanced_search_field" type="text" name="as_oq" size="80">
+                <span id="as_oq">
+                    <input class="advanced_search_field" type="text" name="as_oq">
+                </span>
                 <br><br>
                 <label for="as_eq">none of these words:</label>
-                <input class="advanced_search_field" type="text" name="as_eq" size="80">
-                <br><br>
-                <label for="numbers_ranging_from">numbers ranging from:</label>
-                <input class="advanced_search_field" type="text" name="as_nlo" size="30"><label id="range"> to </label><input class="advanced_search_field" type="text" name="as_nhi" size="30">
+                <span id="as_eq">
+                    <input class="advanced_search_field" type="text" name="as_eq">
+                </span>
                 <br><br>
                 <hr>
                 <input id="submit" type="submit" value="Advanced Search">
