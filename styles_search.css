@@ -214,10 +214,11 @@ label {
         text-align: left;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 7px;
+        padding-bottom: 10px;
         outline: none;
-        width: 280px;
+        width: 250px;
+        font-size: 14px;
     }
     
     .advanced_search_field {
