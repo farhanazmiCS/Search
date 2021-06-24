@@ -18,8 +18,11 @@
         <div class="form">
             <form action="https://google.com/search">
                 <input id="field" type="text" name="q">
+                <!-- To avoid redirect notice -->
+                <input type="hidden" name="iflsig" value="AINFCbYAAAAAYNQtY8qe14OFhzu0pGcgTaslDGPfEgA7">
                 <div>
-                    <input id="submit" type="submit" value="Search">
+                    <input id="submit" type="submit" value="Google Search">
+                    <input id="submit" type="submit" name="btnI" value="I'm Feeling Lucky">
                 </div>
             </form>
         </div>
