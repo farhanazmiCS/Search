@@ -52,8 +52,8 @@ a:hover {
 }
 
 #home {
-    max-width: 17%;
-    height: auto;
+    height: 20px;
+    width: auto;
 }
 
 #title {
@@ -73,8 +73,9 @@ label {
     padding-left: 20px;
     padding-right: 30px;
 }
-/* large devices i.e. laptops and desktops */
-@media (min-width: 800px) {
+
+/* very large devices i.e. desktops */
+@media (min-width: 992px) {
 
     #field {
         border-radius: 20px;
@@ -92,7 +93,7 @@ label {
         font-size: 18px;
         padding: 5px;
         outline: none;
-        width: 600px;
+        width: 650px;
     }
 
     #q {
@@ -100,7 +101,7 @@ label {
     }
     
     #as_oq {
-        padding-left: 40px;
+        padding-left: 43px;
     }
     
     #as_eq {
@@ -108,8 +109,35 @@ label {
     }
 }
 
-/* mid-scale devices */
-@media (min-width: 415px) and (max-width: 799px) {
+/* large devices i.e. laptops */
+@media (max-width: 991px) {
+
+    #field {
+        border-radius: 20px;
+        border-width: thin;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        width: 600px;
+    }
+
+    .advanced_search_field {
+        font-size: 18px;
+        padding: 5px;
+        outline: none;
+        width: 650px;
+    }
+
+    #q, #as_epq, #as_oq, #as_eq {
+        padding-left: 20px;
+    }
+}
+
+/* mid-sized devices i.e tablets or smartphones in landscape orientation */
+@media (max-width: 768px) {
     
     #field {
         border-radius: 20px;
@@ -135,7 +163,7 @@ label {
     }
     
     #as_oq {
-        padding-left: 40px;
+        padding-left: 43px;
     }
     
     #as_eq {
@@ -143,8 +171,35 @@ label {
     }
 }
 
+/* small-to-mid scale devices i.e mini tablets */
+@media (max-width: 639px) {
+    
+    #field {
+        border-radius: 20px;
+        border-width: thin;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        width: 380px;
+    }
+    
+    .advanced_search_field {
+        font-size: 18px;
+        padding: 5px;
+        outline: none;
+        width: 400px;
+    }
+
+    #q, #as_epq, #as_oq, #as_eq {
+        padding-left: 20px;
+    }
+}
+
 /* smartphone in portrait orientation */
-@media (min-width: 311px) and (max-width: 414px) {
+@media (max-width: 480px) {
     
     #field {
         border-radius: 20px;
@@ -162,7 +217,12 @@ label {
         font-size: 18px;
         padding: 5px;
         outline: none;
-        width: 290px;
+        width: 270px;
+    }
+
+    #q, #as_epq, #as_oq, #as_eq {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -173,16 +233,4 @@ label {
 
 label, #range {
     font-size: 14px;
-}
-
-#q {
-    padding-left: 70px;
-}
-
-#as_oq {
-    padding-left: 40px;
-}
-
-#as_eq {
-    padding-left: 35px;
 }
